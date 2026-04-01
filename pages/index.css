@@ -1,0 +1,129 @@
+/* Importar la fuente directamente para que funcione */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap");
+
+.page {
+  background-color: #000;
+  color: #fff;
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Esto centra todo el contenido */
+}
+
+.header {
+  width: 100%;
+  max-width: 880px;
+  padding: 45px 0 31px;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  margin-bottom: 40px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 880px;
+  margin-bottom: 50px;
+}
+
+.profile__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile__info {
+  margin-left: 30px;
+  flex-grow: 1; /* Empuja el botón de añadir a la derecha */
+}
+
+.profile__title-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.profile__name {
+  font-size: 42px;
+  font-weight: 500;
+  margin: 0 18px 8px 0;
+}
+
+.profile__edit-button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+  background: transparent
+    url("https://practicum-content.s3.us-west-1.amazonaws.com/web-surfer/around/images/edit-button.svg")
+    center no-repeat;
+  cursor: pointer;
+}
+
+.profile__add-button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  background: transparent
+    url("https://practicum-content.s3.us-west-1.amazonaws.com/web-surfer/around/images/add-button.svg")
+    center no-repeat;
+  cursor: pointer;
+}
+
+/* El Grid de Tarjetas */
+.elements {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    282px
+  ); /* 3 columnas fijas como en Desktop */
+  gap: 20px;
+  max-width: 880px;
+  padding-bottom: 60px;
+}
+
+.element {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #000;
+}
+
+.element__image {
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
+}
+
+.element__group {
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.element__title {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+}
+
+/* Estilos para Mobile (320px) - Generalmente se escribe primero */
+.clase {
+  width: 100%;
+}
+
+/* Estilos para Tablet (768px) */
+@media screen and (min-width: 768px) {
+  .clase {
+    /* Aquí cambias lo necesario */
+  }
+}
+
+/* Estilos para Desktop (1280px) */
+@media screen and (min-width: 1280px) {
+  .clase {
+    /* Aquí ajustas para pantallas grandes */
+  }
+}
