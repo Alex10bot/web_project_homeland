@@ -1,0 +1,75 @@
+.intro {
+  margin: auto;
+}
+
+.intro__title {
+  font-family: Inter;
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 58px;
+  color: #ffffff;
+  max-width: 1017px;
+}
+
+.intro__subtitle {
+  color: #ffffff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 142%;
+  max-width: 722px;
+}
+
+.intro__span-subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 142%;
+  color: #ffffff;
+  display: block;
+  text-align: right;
+}
+
+.intro__description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  color: #ffffff;
+  max-width: 720px;
+  margin-bottom: 92px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .intro {
+    margin: auto;
+  }
+
+  .intro__title {
+    font-size: 54px;
+    width: 720px;
+  }
+
+  .intro__subtitle {
+    font-size: 24px;
+  }
+
+  .intro__description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .intro {
+    margin: auto 24px auto 24px;
+  }
+
+  .intro__title {
+    line-height: 35px;
+    font-size: 32px;
+    width: 288px;
+  }
+}
