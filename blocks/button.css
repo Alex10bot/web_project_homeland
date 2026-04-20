@@ -1,0 +1,28 @@
+.button {
+  background-color: #0278fe;
+  max-width: 355px;
+  height: 48px;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 13px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 122%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  grid-area: button;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.button {
+  font-size: 14px;
+  margin: auto 16px auto 16px;
+}
